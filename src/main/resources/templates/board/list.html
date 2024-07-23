@@ -43,7 +43,8 @@
                     <td th:text="${board.id}"></td>
 <!--                    <td th:text="${board.title}"></td>-->
                     <td><a th:text="${board.title}" th:href="@{/board/form(id=${board.id})}"></a></td>
-                    <td>홍길동</td>
+<!--                    <td>홍길동</td>-->
+                    <td th:text="${board.user.username}">홍길동</td>
                 </tr>
                 </tbody>
             </table>
